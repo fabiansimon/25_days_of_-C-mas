@@ -55,12 +55,12 @@ int main() {
     // }
 
     for (int i = 0; i < line_count; ++i) {
-        const int a = atoi(col_a[i]);
-        int occ = search(a);
+        const int b = atoi(col_b[i]);
+        int occ = search(b);
         if (occ == -1) {
-            insert(a, 1);
+            insert(b, 1);
         } else {
-            insert(a, occ + 1);
+            insert(b, occ + 1);
         }
     }
 
