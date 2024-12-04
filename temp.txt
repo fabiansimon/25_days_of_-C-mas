@@ -1,20 +1,3 @@
-#!/bin/bash
-
-clear
-
-# Compile the C program
-gcc ./day$1/main.c ./common/hashtable.c -o "./day$1/out"
-
-# Check if compilation succeeded
-if [ $? -eq 0 ]; then
-    echo "Compilation successful! Running the program..."
-    "./day$1/out"  # Execute the compiled program
-else
-    echo "Compilation failed."
-fi
-./run.sh 2
-./run.sh 2
-[H[2J[3JCompilation successful! Running the program...
 11 12 15 18 19 18
 84 86 88 89 92 92
 18 19 21 23 24 25 29
@@ -1015,4 +998,3 @@ fi
 76 79 81 83 86 89 91
 69 68 67 65 63
 3 6 8 11 14 17 19 20
-Safe reports: 465
