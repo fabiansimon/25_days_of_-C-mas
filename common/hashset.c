@@ -4,6 +4,7 @@
 
 // Hash function
 static int hash(int key) {
+    // Could definitely be improved 
     return key % TABLE_SIZE;
 }
 
